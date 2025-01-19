@@ -1,16 +1,55 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <script src="hello.js" defer></script>
-        <title>
-            hello, title
-        </title>
-    </head>
-    <body>
-       <form>
-        <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
-        <button type="submit">greet</button>
-       </form>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: black;
+            color: white; /* Optional: To make the text readable on black background */
+        }
+        header {
+            font-size: 10em; /* Increased by 10 times */
+        }
+        main {
+            font-size: medium;
+        }
+        footer {
+            font-size: small;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Buy $INPUT
+    </header>
+    <main>
+        <img src="https://cdn.openart.ai/uploads/image_lHCXbLSb_1737266792454_raw.jpg" alt="Top Image">
+        <p>Welcome to the Future ANON!!! Do you get the neo? I'm a graduated Computer Science major with knowledge of writing code. I designed this greetings Interactive AI. I will be evolving this project further.</p>
+        <form id="nameForm">
+            <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
+            <button type="submit">Greet</button>
+        </form>
+        <img src="https://cdn.openart.ai/uploads/image_lHCXbLSb_1737266792454_raw.jpg" alt="Bottom Image">
+    </main>
+    <footer>
+        copyright &#169; @INPUT
+    </footer>
+
+    <script>
+        document.getElementById('nameForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const nameInput = document.getElementById('name').value;
+            if (nameInput) {
+                alert('Hello, ' + nameInput + '!');
+            }
+        });
+    </script>
+</body>
 </html>

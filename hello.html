@@ -32,9 +32,27 @@
             color: red;
             margin: 0 10px;
         }
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 15s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
     </style>
 </head>
 <body>
+    <div class="marquee">
+        <span>buy $INPUT |||| $INPUT is Yours ||| Don't miss out</span>
+    </div>
     <header>
         Buy $INPUT
     </header>
@@ -56,6 +74,9 @@
         <br>
         copyright &#169; @INPUT
     </footer>
+    <div class="marquee">
+        <span>buy $INPUT |||| $INPUT is Yours ||| Don't miss out</span>
+    </div>
 
     <script>
         document.getElementById('nameForm').addEventListener('submit', function(e) {

@@ -23,20 +23,35 @@
             max-width: 100%;
             height: auto;
         }
+        .left-input {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .links {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <header>
         Buy $INPUT
     </header>
+    <div class="left-input">
+        <input type="text" id="leftInput" placeholder="Type here">
+    </div>
     <main>
         <img src="https://cdn.openart.ai/uploads/image_lHCXbLSb_1737266792454_raw.jpg" alt="Top Image">
-        <p>Welcome to the Future ANON!!! Do you get the neo? I'm a graduated Computer Science major with knowledge of writing code. I designed this greetings Interactive AI. I will be evolving this project further.Crypto-currency, or colloquially, crypto, is a digital currency designed to work through a computer network that is not reliant on any central authority, such as a government or bank, to uphold or maintain it.
-Individual coin ownership records are stored in a digital ledger or blockchain, which is a computerized database that uses a consensus mechanism to secure Identification. The future is coming and will be here before you know it your either going upwards with the future and making a change or downward. The cards are in your hands.</p>
+        <p>Welcome to the Future ANON!!! Do you get the neo? I'm a graduated Computer Science major with knowledge of writing code. I designed this greetings Interactive AI. I will be evolving this project further.</p>
         <form id="nameForm">
             <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
             <button type="submit">Greet</button>
         </form>
+        <div class="links">
+            <a href="https://x.com/InputMainVoid">x</a>
+            <a href="https://www.telegram.com/">Telegram</a>
+        </div>
         <img src="https://cdn.openart.ai/uploads/image_lHCXbLSb_1737266792454_raw.jpg" alt="Bottom Image">
     </main>
     <footer>

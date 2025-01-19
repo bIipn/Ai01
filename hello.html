@@ -7,8 +7,7 @@
     <style>
         body {
             text-align: center;
-            background-color: #87CEEB; /* Sky blue background */
-            overflow: hidden; /* Ensures clouds don't create scrollbars */
+            background-color: black;
             color: white; /* Optional: To make the text readable on black background */
         }
         header {
@@ -21,7 +20,7 @@
             font-size: small;
         }
         img {
-            max-width: 10%;
+            max-width: 100%;
             height: auto;
         }
         .top-image {
@@ -48,18 +47,6 @@
         @keyframes marquee {
             0% { transform: translate(0, 0); }
             100% { transform: translate(-100%, 0); }
-        }
-        .cloud {
-            position: absolute;
-            background: url('https://www.transparenttextures.com/patterns/clouds.png') repeat;
-            background-size: cover;
-            width: 200px;
-            height: 100px;
-            animation: float 20s linear infinite;
-        }
-        @keyframes float {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100vw); }
         }
     </style>
 </head>
@@ -116,12 +103,6 @@
         <span>buy $INPUT |||| $INPUT is Yours ||| Don't miss out</span>
     </div>
 
-    <!-- Clouds floating in the background -->
-    <div class="cloud" style="top: 10%; left: -200px;"></div>
-    <div class="cloud" style="top: 30%; left: -400px;"></div>
-    <div class="cloud" style="top: 50%; left: -600px;"></div>
-    <div class="cloud" style="top: 70%; left: -800px;"></div>
-
     <script>
         document.getElementById('nameForm').addEventListener('submit', function(e) {
             e.preventDefault();
@@ -132,5 +113,4 @@
         });
     </script>
 </body>
-</html>
 </html>

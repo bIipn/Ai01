@@ -18,7 +18,18 @@
             font-size: small;
         }
     </style>
-    <script src="hello.js" defer></script>
+    <script defer>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const form = document.querySelector('form');
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const nameInput = document.getElementById('name').value;
+                if (nameInput) {
+                    alert(`Hello, ${nameInput}!`);
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -35,4 +46,5 @@
         <button type="submit">greet</button>
     </form>
 </body>
+</html>
 </html>

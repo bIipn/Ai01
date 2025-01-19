@@ -19,6 +19,10 @@
         footer {
             font-size: small;
         }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -26,10 +30,25 @@
         Buy $INPUT
     </header>
     <main>
-        Welcome to the Future ANON!!! Do you get the neo? I'm a graduated Computer Science major with knowledge of writing code. I designed this greetings Interactive AI. I will be evolving this project further.
+        <img src="https://cdn.openart.ai/uploads/image_lHCXbLSb_1737266792454_raw.jpg" alt="Image Description">
+        <p>Welcome to the Future ANON!!! Do you get the neo? I'm a graduated Computer Science major with knowledge of writing code. I designed this greetings Interactive AI. I will be evolving this project further.</p>
+        <form id="nameForm">
+            <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
+            <button type="submit">Greet</button>
+        </form>
     </main>
     <footer>
         copyright &#169; @INPUT
     </footer>
+
+    <script>
+        document.getElementById('nameForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const nameInput = document.getElementById('name').value;
+            if (nameInput) {
+                alert('Hello, ' + nameInput + '!');
+            }
+        });
+    </script>
 </body>
 </html>

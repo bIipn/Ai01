@@ -11,7 +11,7 @@
             color: white; /* Optional: To make the text readable on black background */
         }
         header {
-            font-size: 10em; /* Increased by 10 times */
+            font-size: large;
         }
         main {
             font-size: medium;
@@ -19,53 +19,17 @@
         footer {
             font-size: small;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .left-input {
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        .links {
-            margin-top: 20px;
-        }
     </style>
 </head>
 <body>
     <header>
         Buy $INPUT
     </header>
-    <div class="left-input">
-        <input type="text" id="leftInput" placeholder="Type here">
-    </div>
     <main>
-        <img src="https://cdn.openart.ai/uploads/image_lHCXbLSb_1737266792454_raw.jpg" alt="Top Image">
-        <p>Welcome to the Future ANON!!! Do you get the neo? I'm a graduated Computer Science major with knowledge of writing code. I designed this greetings Interactive AI. I will be evolving this project further.</p>
-        <form id="nameForm">
-            <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
-            <button type="submit">Greet</button>
-        </form>
-        <div class="links">
-            <a href="https://x.com/InputMainVoid">x</a>
-            <a href="https://www.telegram.com/">Telegram</a>
-        </div>
-        <img src="https://cdn.openart.ai/uploads/image_lHCXbLSb_1737266792454_raw.jpg" alt="Bottom Image">
+        Welcome to the Future ANON!!! Do you get the neo? I'm a graduated Computer Science major with knowledge of writing code. I designed this greetings Interactive AI. I will be evolving this project further.
     </main>
     <footer>
         copyright &#169; @INPUT
     </footer>
-
-    <script>
-        document.getElementById('nameForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const nameInput = document.getElementById('name').value;
-            if (nameInput) {
-                alert('Hello, ' + nameInput + '!');
-            }
-        });
-    </script>
 </body>
 </html>

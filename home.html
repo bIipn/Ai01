@@ -11,7 +11,7 @@
             color: white; /* Optional: To make the text readable on black background */
         }
         header {
-            font-size: large;
+            font-size: 10em; /* Increased by 10 times */
         }
         main {
             font-size: medium;
@@ -23,15 +23,70 @@
             max-width: 100%;
             height: auto;
         }
+        .top-image {
+            width: 10%;
+            height: auto;
+        }
+        .footer-link {
+            font-size: 5em;
+            color: red;
+            margin: 0 10px;
+        }
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            font-size: 5em; /* Made 5x bigger */
+        }
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 15s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
     </style>
 </head>
 <body>
+    <div class="marquee">
+        <span>Buy $INPUT |||| $INPUT can be Yours ||| Don't miss out buy right now</span>
+    </div>
     <header>
         Buy $INPUT
     </header>
     <main>
-        <img src="https://cdn.openart.ai/uploads/image_lHCXbLSb_1737266792454_raw.jpg" alt="Top Image">
-        <p>Welcome to the Future ANON!!! Do you get the neo? I'm a graduated Computer Science major with knowledge of writing code. I designed this greetings Interactive AI. I will be evolving this project further.</p>
+        <img src="https://cdn.openart.ai/uploads/image_lHCXbLSb_1737266792454_raw.jpg" alt="Top Image" class="top-image">
+        <p>Welcome to the Future ANON!!! Do you get the neo? For this project we plan on bringing the best innovations to the community. The community is the token no matter how much our AI can do people will always be the driving force.</p>
+
+        <p>A defining feature of cryptocurrencies is that they are generally not issued by any central authority, rendering them theoretically immune to government interference or manipulation.</p>
+
+        <p>⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣶⠶⠶⠶⠶⠶⠶⠶⠶⣶⣶⣦⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢀⣠⠾⠿⠿⢿⣿⣿⣿⣟⣻⠿⠶⠶⠿⠖⠒⢀⣿⣿⣿⣷⣶⣶⣦⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢀⣴⠟⢉⣠⣴⣾⠟⠋⠉⠁⠿⠛⢛⣛⣛⣒⣒⣒⣛⡋⠉⠉⢉⣽⣿⣿⣿⣿⢿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⣰⡟⢁⣴⣿⡿⠋⣠⡾⠟⠛⠛⠛⠻⢯⡁⠀⠈⠉⠀⠀⠀⣠⡾⠋⠁⠀⣠⣾⣿⢻⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⣰⡟⠐⠉⠉⠁⠀⣰⠏⠀⠀⠀⠀⠀⠀⠈⣿⡀⠀⠀⠀⠀⢸⡟⠀⠀⠀⠀⠈⠛⠋⢸⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⢀⣿⠀⠀⠀⠀⢀⣀⣿⠀⣴⣶⣶⡄⠀⠀⠀⣿⡇⠀⠀⠀⠀⢸⣇⠀⠀⠀⠀⠀⠀⢀⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⢸⡇⠀⠀⠀⡠⠾⠿⣿⣆⠻⠿⠛⠀⠀⠀⢠⡿⠁⠀⠀⠀⠀⠈⠻⢶⣤⣤⣴⡶⠶⢿⣧⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣾⠃⠀⠀⠀⠀⠀⠜⠉⠈⠛⠶⢶⣦⣶⠾⠋⠁⠀⠀⠀⠀⠀⠀⢀⣠⣾⠋⢀⣠⣤⣀⠈⠛⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠲⠶⠶⠶⠒⠚⢻⣿⠁⣴⣿⣁⣉⠙⢷⡄⠘⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣿⣟⣛⣋⣁⢰⣿⠃⢸⡟⢹⠋⣿⢻⡿⣷⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⣈⣉⣉⣉⣉⣁⢸⡟⠀⣼⡟⠛⠛⠛⠛⠛⣿⢀⡿⠀⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⡀⠀⠀⠀⢀⣀⠀⠀⠀⠀
+⢻⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠈⣿⠀⣿⡇⠀⠀⠀⠀⢠⡟⣸⠇⠀⠀⢸⣿⡆⠀⠀⠀⠀⢀⣴⣿⠿⠿⢿⣷⣄⠀⢸⣿⠀⠀⠀⠀
+⠘⣧⠀⠀⠀⠀⠀⢲⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡄⣿⡇⠀⠀⠀⢀⣿⠁⣿⠀⠀⠀⢸⣿⡇⠀⠀⠀⠀⣸⣿⠁⠀⠀⠀⢿⣿⠀⢸⣿⠀⠀⠀⠀
+⠀⢻⡆⠀⠀⠀⠀⠀⠙⣄⠀⠀⠀⠀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⣿⠇⣿⠁⠀⠀⠀⢸⡇⠘⣿⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⢻⣿⡀⠀⠀⠀⣾⣿⠀⢸⣿⠀⠀⠀⠀
+⠀⠈⣷⡀⠀⠀⠀⠀⠀⠈⣧⠀⠀⠀⠈⠭⠿⣿⣦⣄⠀⠀⠀⢀⣿⢀⣿⠀⠀⠀⠀⢸⡇⠀⢿⡄⠀⠀⢸⣿⣦⣤⣤⣤⡄⠈⢿⣷⣦⣤⣾⣿⠏⠀⢸⣿⣤⣤⣤⣤
+⠀⠀⠸⣧⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠒⠶⣬⣛⠷⡀⠀⣸⡇⢸⡏⠉⠙⠲⣄⠀⣿⡀⢸⡇⠀⠀⠈⠉⠉⠉⠉⠉⠁⠀⠀⠈⠉⠉⠉⠀⠀⠀⠈⠉⠉⠉⠉⠉
+⠀⠀⠀⠹⣧⠀⠀⢰⡀⠀⠘⢧⡀⠀⠀⠠⠤⣤⣀⠙⢷⣄⠀⣿⠀⣸⣃⣀⣀⣀⣈⣷⣿⠇⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠻⣆⠀⠀⠃⠀⠀⠀⠙⢦⡀⠀⠀⠀⠉⠓⢦⡈⢸⡇⠀⢻⡏⣽⣉⡏⣿⢩⡿⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠹⣧⡀⠀⠘⠷⣦⣄⠀⠙⠦⡀⠀⠀⠀⠀⠙⢾⣧⠀⠸⣿⣉⠉⠛⣛⣿⠃⠀⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠈⠻⣦⡀⠀⠀⠉⠓⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣄⠀⠈⠙⠛⠛⠛⠁⢀⣾⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠷⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢷⣦⣤⣤⣤⣤⡾⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⣶⣦⣄⡀⠀⠀⠀⠀⠀⣠⣠⣤⣽⠟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠷⢶⣤⣶⠶⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+
         <form id="nameForm">
             <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
             <button type="submit">Greet</button>
@@ -39,8 +94,14 @@
         <img src="https://cdn.openart.ai/uploads/image_lHCXbLSb_1737266792454_raw.jpg" alt="Bottom Image">
     </main>
     <footer>
+        <a href="https://x.com/InputMainVoid" class="footer-link">twitter</a>
+        <a href="https://github.com/bIipn" class="footer-link">Github</a>
+        <br>
         copyright &#169; @INPUT
     </footer>
+    <div class="marquee">
+        <span>buy $INPUT |||| $INPUT is Yours ||| Don't miss out</span>
+    </div>
 
     <script>
         document.getElementById('nameForm').addEventListener('submit', function(e) {

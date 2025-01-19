@@ -7,9 +7,8 @@
     <style>
         body {
             text-align: center;
-            background-color: skyblue;
-            background-image: url('https://www.transparenttextures.com/patterns/clouds.png'); /* Adding cloud texture */
-            background-repeat: repeat;
+            background-color: #87CEEB; /* Sky blue background */
+            overflow: hidden; /* Ensures clouds don't create scrollbars */
             color: white; /* Optional: To make the text readable on black background */
         }
         header {
@@ -22,7 +21,7 @@
             font-size: small;
         }
         img {
-            max-width: 100%;
+            max-width: 10%;
             height: auto;
         }
         .top-image {
@@ -52,14 +51,14 @@
         }
         .cloud {
             position: absolute;
-            background-image: url('https://www.transparenttextures.com/patterns/clouds.png');
+            background: url('https://www.transparenttextures.com/patterns/clouds.png') repeat;
             background-size: cover;
             width: 200px;
             height: 100px;
             animation: float 20s linear infinite;
         }
         @keyframes float {
-            0% { transform: translateX(0); }
+            0% { transform: translateX(-100%); }
             100% { transform: translateX(100vw); }
         }
     </style>
@@ -77,6 +76,30 @@
 
         <p>A defining feature of cryptocurrencies is that they are generally not issued by any central authority, rendering them theoretically immune to government interference or manipulation.</p>
 
+        <p>⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣶⠶⠶⠶⠶⠶⠶⠶⠶⣶⣶⣦⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢀⣠⠾⠿⠿⢿⣿⣿⣿⣟⣻⠿⠶⠶⠿⠖⠒⢀⣿⣿⣿⣷⣶⣶⣦⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢀⣴⠟⢉⣠⣴⣾⠟⠋⠉⠁⠿⠛⢛⣛⣛⣒⣒⣒⣛⡋⠉⠉⢉⣽⣿⣿⣿⣿⢿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⣰⡟⢁⣴⣿⡿⠋⣠⡾⠟⠛⠛⠛⠻⢯⡁⠀⠈⠉⠀⠀⠀⣠⡾⠋⠁⠀⣠⣾⣿⢻⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⣰⡟⠐⠉⠉⠁⠀⣰⠏⠀⠀⠀⠀⠀⠀⠈⣿⡀⠀⠀⠀⠀⢸⡟⠀⠀⠀⠀⠈⠛⠋⢸⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⢀⣿⠀⠀⠀⠀⢀⣀⣿⠀⣴⣶⣶⡄⠀⠀⠀⣿⡇⠀⠀⠀⠀⢸⣇⠀⠀⠀⠀⠀⠀⢀⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⢸⡇⠀⠀⠀⡠⠾⠿⣿⣆⠻⠿⠛⠀⠀⠀⢠⡿⠁⠀⠀⠀⠀⠈⠻⢶⣤⣤⣴⡶⠶⢿⣧⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣾⠃⠀⠀⠀⠀⠀⠜⠉⠈⠛⠶⢶⣦⣶⠾⠋⠁⠀⠀⠀⠀⠀⠀⢀⣠⣾⠋⢀⣠⣤⣀⠈⠛⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠲⠶⠶⠶⠒⠚⢻⣿⠁⣴⣿⣁⣉⠙⢷⡄⠘⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣿⣟⣛⣋⣁⢰⣿⠃⢸⡟⢹⠋⣿⢻⡿⣷⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⣈⣉⣉⣉⣉⣁⢸⡟⠀⣼⡟⠛⠛⠛⠛⠛⣿⢀⡿⠀⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⡀⠀⠀⠀⢀⣀⠀⠀⠀⠀
+⢻⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠈⣿⠀⣿⡇⠀⠀⠀⠀⢠⡟⣸⠇⠀⠀⢸⣿⡆⠀⠀⠀⠀⢀⣴⣿⠿⠿⢿⣷⣄⠀⢸⣿⠀⠀⠀⠀
+⠘⣧⠀⠀⠀⠀⠀⢲⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡄⣿⡇⠀⠀⠀⢀⣿⠁⣿⠀⠀⠀⢸⣿⡇⠀⠀⠀⠀⣸⣿⠁⠀⠀⠀⢿⣿⠀⢸⣿⠀⠀⠀⠀
+⠀⢻⡆⠀⠀⠀⠀⠀⠙⣄⠀⠀⠀⠀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⣿⠇⣿⠁⠀⠀⠀⢸⡇⠘⣿⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⢻⣿⡀⠀⠀⠀⣾⣿⠀⢸⣿⠀⠀⠀⠀
+⠀⠈⣷⡀⠀⠀⠀⠀⠀⠈⣧⠀⠀⠀⠈⠭⠿⣿⣦⣄⠀⠀⠀⢀⣿⢀⣿⠀⠀⠀⠀⢸⡇⠀⢿⡄⠀⠀⢸⣿⣦⣤⣤⣤⡄⠈⢿⣷⣦⣤⣾⣿⠏⠀⢸⣿⣤⣤⣤⣤
+⠀⠀⠸⣧⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠒⠶⣬⣛⠷⡀⠀⣸⡇⢸⡏⠉⠙⠲⣄⠀⣿⡀⢸⡇⠀⠀⠈⠉⠉⠉⠉⠉⠁⠀⠀⠈⠉⠉⠉⠀⠀⠀⠈⠉⠉⠉⠉⠉
+⠀⠀⠀⠹⣧⠀⠀⢰⡀⠀⠘⢧⡀⠀⠀⠠⠤⣤⣀⠙⢷⣄⠀⣿⠀⣸⣃⣀⣀⣀⣈⣷⣿⠇⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠻⣆⠀⠀⠃⠀⠀⠀⠙⢦⡀⠀⠀⠀⠉⠓⢦⡈⢸⡇⠀⢻⡏⣽⣉⡏⣿⢩⡿⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠹⣧⡀⠀⠘⠷⣦⣄⠀⠙⠦⡀⠀⠀⠀⠀⠙⢾⣧⠀⠸⣿⣉⠉⠛⣛⣿⠃⠀⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠈⠻⣦⡀⠀⠀⠉⠓⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣄⠀⠈⠙⠛⠛⠛⠁⢀⣾⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠷⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢷⣦⣤⣤⣤⣤⡾⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⣶⣦⣄⡀⠀⠀⠀⠀⠀⣠⣠⣤⣽⠟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠷⢶⣤⣶⠶⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+
         <form id="nameForm">
             <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
             <button type="submit">Greet</button>
@@ -93,10 +116,11 @@
         <span>buy $INPUT |||| $INPUT is Yours ||| Don't miss out</span>
     </div>
 
-    <div class="cloud" style="top: 10%; left: 0;"></div>
-    <div class="cloud" style="top: 30%; left: -200px;"></div>
-    <div class="cloud" style="top: 50%; left: -400px;"></div>
-    <div class="cloud" style="top: 70%; left: -600px;"></div>
+    <!-- Clouds floating in the background -->
+    <div class="cloud" style="top: 10%; left: -200px;"></div>
+    <div class="cloud" style="top: 30%; left: -400px;"></div>
+    <div class="cloud" style="top: 50%; left: -600px;"></div>
+    <div class="cloud" style="top: 70%; left: -800px;"></div>
 
     <script>
         document.getElementById('nameForm').addEventListener('submit', function(e) {
@@ -108,4 +132,5 @@
         });
     </script>
 </body>
+</html>
 </html>

@@ -55,13 +55,12 @@
         <span>Buy $ATRUMP |||| $ATRUMP Atificial Trump can be Yours ||| Don't miss out buy right now</span>
     </div>
     <header>
-        Buy $INPUT
+        Buy $ATRUMP
     </header>
     <main>
         <img src="https://raw.githubusercontent.com/bIipn/Ai01/main/Screenshot_19-1-2025_131534_www.bing.com.jpeg" alt="Top Image" class="top-image">
-        <p>Donald J. Trump our president launched a Meme coin and solana blew up, Artificial Trump $ATRUMP will be full of trump Ai generated memes because his name and face is so iconic it should be fun to see where this project ends up</p>
-
-        <p>Trump will lead $Sol to hopefully $1000 aree you ready?A defining feature of cryptocurrencies is that they are generally not issued by any central authority, rendering them theoretically immune to government interference or manipulation.</p>
+        <p id="sentence1"></p>
+        <p id="sentence2"></p>
 
         <p>⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣶⠶⠶⠶⠶⠶⠶⠶⠶⣶⣶⣦⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⢀⣠⠾⠿⠿⢿⣿⣿⣿⣟⣻⠿⠶⠶⠿⠖⠒⢀⣿⣿⣿⣷⣶⣶⣦⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -97,10 +96,10 @@
         <a href="https://x.com/InputMainVoid" class="footer-link">twitter</a>
         <a href="https://github.com/bIipn" class="footer-link">Github</a>
         <br>
-        copyright &#169; @INPUT
+        copyright &#169; $ATRUMP
     </footer>
     <div class="marquee">
-        <span>Buy $ATRUMP |||| $ATRUMP Atificial Trump can be Yours ||| Don't miss out buy right now>
+        <span>Buy $ATRUMP |||| $ATRUMP Atificial Trump can be Yours ||| Don't miss out buy right now></span>
     </div>
 
     <script>
@@ -111,6 +110,28 @@
                 alert('Hello, ' + nameInput + '!');
             }
         });
+
+        const sentence1 = "Donald J. Trump our president launched a Meme coin and solana blew up, Artificial Trump $ATRUMP will be full of trump Ai generated memes because his name and face is so iconic it should be fun to see where this project ends up";
+        const sentence2 = "Trump will lead $Sol to hopefully $1000 aree you ready? A defining feature of cryptocurrencies is that they are generally not issued by any central authority, rendering them theoretically immune to government interference or manipulation.";
+
+        function displaySentence(sentence, elementId) {
+            let words = sentence.split(' ');
+            let index = 0;
+            const element = document.getElementById(elementId);
+            const interval = setInterval(() => {
+                if (index < words.length) {
+                    element.innerHTML += words[index] + ' ';
+                    index++;
+                } else {
+                    clearInterval(interval);
+                    if (elementId === 'sentence1') {
+                        displaySentence(sentence2, 'sentence2');
+                    }
+                }
+            }, 500);
+        }
+
+        displaySentence(sentence1, 'sentence1');
     </script>
 </body>
 </html>

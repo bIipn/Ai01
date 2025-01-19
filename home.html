@@ -23,25 +23,11 @@
             max-width: 10%;
             height: auto;
         }
-        .middle-left-image {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            width: 10%;
-            height: auto;
-            transform: translateY(-50%);
-        }
-        .middle-right-image {
-            position: absolute;
-            top: 50%;
-            right: 0;
-            width: 10%;
-            height: auto;
-            transform: translateY(-50%);
-        }
-        .top-image {
-            width: 10%;
-            height: auto;
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
         }
         .footer-link {
             font-size: 5em;
@@ -73,8 +59,6 @@
     </style>
 </head>
 <body>
-    <img src="https://raw.githubusercontent.com/bIipn/Ai01/main/openart-image_S16rBy4Y_1737323454962_raw.png" alt="Middle Left Image" class="middle-left-image">
-    <img src="https://raw.githubusercontent.com/bIipn/Ai01/main/openart-image__YuRAUhN_1737323762104_raw%20(1).png" alt="Middle Right Image" class="middle-right-image">
     <div class="marquee">
         <span>Buy $ATRUMP |||| $ATRUMP Atificial Trump can be Yours ||| Don't miss out buy right now</span>
     </div>
@@ -82,33 +66,15 @@
         Buy $ATRUMP
     </header>
     <main>
-        <img src="https://raw.githubusercontent.com/bIipn/Ai01/main/Screenshot_19-1-2025_131534_www.bing.com.jpeg" alt="Top Image" class="top-image">
+        <div class="image-container">
+            <img src="https://raw.githubusercontent.com/bIipn/Ai01/main/Screenshot_19-1-2025_131534_www.bing.com.jpeg" alt="Top Image" class="top-image">
+            <img src="https://raw.githubusercontent.com/bIipn/Ai01/main/openart-image_S16rBy4Y_1737323454962_raw.png" alt="Middle Left Image" class="middle-left-image">
+            <img src="https://raw.githubusercontent.com/bIipn/Ai01/main/openart-image__YuRAUhN_1737323762104_raw%20(1).png" alt="Middle Right Image" class="middle-right-image">
+        </div>
         <p id="sentence1"></p>
         <p id="sentence2"></p>
 
-        <p>⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣶⠶⠶⠶⠶⠶⠶⠶⠶⣶⣶⣦⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⢀⣠⠾⠿⠿⢿⣿⣿⣿⣟⣻⠿⠶⠶⠿⠖⠒⢀⣿⣿⣿⣷⣶⣶⣦⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⢀⣴⠟⢉⣠⣴⣾⠟⠋⠉⠁⠿⠛⢛⣛⣛⣒⣒⣒⣛⡋⠉⠉⢉⣽⣿⣿⣿⣿⢿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⣰⡟⢁⣴⣿⡿⠋⣠⡾⠟⠛⠛⠛⠻⢯⡁⠀⠈⠉⠀⠀⠀⣠⡾⠋⠁⠀⣠⣾⣿⢻⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⣰⡟⠐⠉⠉⠁⠀⣰⠏⠀⠀⠀⠀⠀⠀⠈⣿⡀⠀⠀⠀⠀⢸⡟⠀⠀⠀⠀⠈⠛⠋⢸⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⢀⣿⠀⠀⠀⠀⢀⣀⣿⠀⣴⣶⣶⡄⠀⠀⠀⣿⡇⠀⠀⠀⠀⢸⣇⠀⠀⠀⠀⠀⠀⢀⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⢸⡇⠀⠀⠀⡠⠾⠿⣿⣆⠻⠿⠛⠀⠀⠀⢠⡿⠁⠀⠀⠀⠀⠈⠻⢶⣤⣤⣴⡶⠶⢿⣧⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⣾⠃⠀⠀⠀⠀⠀⠜⠉⠈⠛⠶⢶⣦⣶⠾⠋⠁⠀⠀⠀⠀⠀⠀⢀⣠⣾⠋⢀⣠⣤⣀⠈⠛⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠲⠶⠶⠶⠒⠚⢻⣿⠁⣴⣿⣁⣉⠙⢷⡄⠘⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣿⣟⣛⣋⣁⢰⣿⠃⢸⡟⢹⠋⣿⢻⡿⣷⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⣈⣉⣉⣉⣉⣁⢸⡟⠀⣼⡟⠛⠛⠛⠛⠛⣿⢀⡿⠀⠀⠀⠀⠀⠀⠀
-⢻⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠈⣿⠀⣿⡇⠀⠀⠀⠀⢠⡟⣸⠇⠀⠀⠀⠀⠀⠀
-⠘⣧⠀⠀⠀⠀⠀⢲⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡄⣿⡇⠀⠀⠀⢀⣿⠁⣿⠀⠀⠀⠀⠀⠀⠀
-⠀⢻⡆⠀⠀⠀⠀⠀⠙⣄⠀⠀⠀⠀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⣿⠇⣿⠁⠀⠀⠀⢸⡇⠘⣿⠀⠀⠀⠀⠀⠀⠀
-⠀⠈⣷⡀⠀⠀⠀⠀⠀⠈⣧⠀⠀⠀⠈⠭⠿⣿⣦⣄⠀⠀⠀⢀⣿⢀⣿⠀⠀⠀⠀⢸⡇⠀⢿⡄⠀⠀
-⠀⠀⠸⣧⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠒⠶⣬⣛⠷⡀⠀⣸⡇⢸⡏⠉⠙⠲⣄⠀⣿⡀⢸⡇⠀
-⠀⠀⠀⠹⣧⠀⠀⢰⡀⠀⠘⢧⡀⠀⠀⠠⠤⣤⣀⠙⢷⣄⠀⣿⠀⣸⣃⣀⣀⣀⣈⣷⣿⠇⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠻⣆⠀⠀⠃⠀⠀⠀⠙⢦⡀⠀⠀⠀⠉⠓⢦⡈⢸⡇⠀⢻⡏⣽⣉⡏⣿⢩⡿⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠹⣧⡀⠀⠘⠷⣦⣄⠀⠙⠦⡀⠀⠀⠀⠀⠙⢾⣧⠀⠸⣿⣉⠉⠛⣛⣿⠃⠀⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠈⠻⣦⡀⠀⠀⠉⠓⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣄⠀⠈⠙⠛⠛⠛⠁⢀⣾⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠷⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢷⣦⣤⣤⣤⣤⡾⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⣶⣦⣄⡀⠀⠀⠀⠀⠀⣠⣠⣤⣽⠟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠷⢶⣤⣶⠶⠟⠋⠁⠀⠀⠀</p>
+
 
         <form id="nameForm">
             <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
@@ -122,6 +88,19 @@
         <br>
         copyright &#169; $ATRUMP
     </footer>
+    <p>⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣤⣶⠶⠶⣶⣤⣤⡀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢀⣴⠾⠛⠉⠀⢠⣾⣴⡾⠛⠻⣷⣄⠀⠀⠀⠀⠀
+⠀⠀⢶⣶⣶⣿⣁⠀⠀⠀⠀⢸⣿⠏⢀⣤⣶⣌⠻⣦⡀⠀⠀⠀
+⠀⠀⣴⡟⠁⢉⣙⣿⣦⡀⠀⢸⡏⣴⠟⢡⣶⣿⣧⡹⣷⡀⠀⠀
+⠀⣼⠏⢀⣾⠟⠛⠛⠻⣿⡆⠀⠀⢿⣄⠀⠙⠉⠹⣷⡸⣷⠀⠀
+⢠⣿⠀⢸⡿⢿⠇⠀⠀⣾⠇⠀⣀⣈⠻⢷⣤⣤⣤⡾⠃⢹⣇⠀
+⢸⣿⠀⢸⣧⣀⣀⣠⣾⢋⣴⢿⣿⡛⠻⣶⣤⣉⠁⠀⠀⠀⣿⠀
+⠈⣿⠀⠀⠙⠛⠛⠋⠁⣼⣯⣀⣿⠿⠶⠟⠉⠛⢷⣄⠀⠀⣿⡇
+⠀⣿⠀⠀⠀⠀⠀⠀⠀⣿⡏⠉⠁⠀⠀⢀⣴⢶⣄  ⢻⡇  ⢸⡇
+⠀⢻⣇⠀⠀⠀⠀⠀⢠⡿⢀⣀⢠⣾⠷⣾⣧⡶⠿⠟⠁⠀⣾⡇
+⠀⠈⣿⣧⡀⠀⠀⣠⣿⣷⠟⢻⣿⣷⡾⠛⠉⠀⠀⠀⠀⢀⣿⠀
+⠀⠀⢹⣿⢻⣦⡀⠉⠛⠛⠛⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⣼⠏⠀
+⠀⠀⠀⠛⠀⠈⠻⠷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⠟⠀⠀</p>
     <div class="marquee">
         <span>Buy $ATRUMP |||| $ATRUMP Atificial Trump can be Yours ||| Don't miss out buy right now</span>
     </div>

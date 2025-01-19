@@ -7,7 +7,9 @@
     <style>
         body {
             text-align: center;
-            background-color: black;
+            background-color: skyblue;
+            background-image: url('https://www.transparenttextures.com/patterns/clouds.png'); /* Adding cloud texture */
+            background-repeat: repeat;
             color: white; /* Optional: To make the text readable on black background */
         }
         header {
@@ -48,6 +50,18 @@
             0% { transform: translate(0, 0); }
             100% { transform: translate(-100%, 0); }
         }
+        .cloud {
+            position: absolute;
+            background-image: url('https://www.transparenttextures.com/patterns/clouds.png');
+            background-size: cover;
+            width: 200px;
+            height: 100px;
+            animation: float 20s linear infinite;
+        }
+        @keyframes float {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(100vw); }
+        }
     </style>
 </head>
 <body>
@@ -78,6 +92,11 @@
     <div class="marquee">
         <span>buy $INPUT |||| $INPUT is Yours ||| Don't miss out</span>
     </div>
+
+    <div class="cloud" style="top: 10%; left: 0;"></div>
+    <div class="cloud" style="top: 30%; left: -200px;"></div>
+    <div class="cloud" style="top: 50%; left: -400px;"></div>
+    <div class="cloud" style="top: 70%; left: -600px;"></div>
 
     <script>
         document.getElementById('nameForm').addEventListener('submit', function(e) {

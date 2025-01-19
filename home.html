@@ -8,7 +8,7 @@
         body {
             text-align: center;
             background-color: black;
-            color: black; /* Optional: To make the text readable on background */
+            color: white; /* To make the text readable on black background */
         }
         header {
             font-size: large;
@@ -31,5 +31,22 @@
     <footer>
         copyright &#169; @INPUT
     </footer>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" id="fileInput" accept="application/pdf">
+        <button type="submit">Upload PDF</button>
+    </form>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+            if (file && file.type === "application/pdf") {
+                alert('PDF uploaded successfully: ' + file.name);
+            } else {
+                alert('Please upload a valid PDF file.');
+            }
+        });
+    </script>
 </body>
 </html>
